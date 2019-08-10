@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinAvancado.Views.MainPage"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Entry Text="{Binding Cityname}"/>
+        <Button Text="Go to API" Command="{Binding GoToAPI}"/>
+        <Switch IsToggled="{Binding IsActive}"/>
+        <Button Text="Second Page" Command="{Binding GoToSecond}"/>
+        <Button Text="Show Message" Command="{Binding CallMsg}"/>
+        <Button Text="Show Action Sheet" Command="{Binding DisplayActionSheet}"/>
+    </StackLayout>
+
+</ContentPage>
