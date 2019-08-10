@@ -5,7 +5,7 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Entry Text="{Binding Cityname}"/>
+        <Entry Text="{Binding CityName}"/>
         <Button Text="Go to API" Command="{Binding GoToAPI}"/>
         <Switch IsToggled="{Binding IsActive}"/>
         <Button Text="Second Page" Command="{Binding GoToSecond}"/>

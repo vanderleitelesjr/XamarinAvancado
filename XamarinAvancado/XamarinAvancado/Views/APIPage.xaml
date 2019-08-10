@@ -4,5 +4,13 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="XamarinAvancado.Views.APIPage">
+    <StackLayout>
+        <Label Text="{Binding Weather.id}"
+               VerticalOptions="CenterAndExpand"/>
+        <Label Text="{Binding Weather.cod}"
+               VerticalOptions="CenterAndExpand"/>
+        <Label Text="{Binding Weather.name}"
+               VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
   
 </ContentPage>

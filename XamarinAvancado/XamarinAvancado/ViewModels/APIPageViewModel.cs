@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Prism.Mvvm;
 using Prism.Navigation;
+using System.Diagnostics;
 using System.Net.Http;
 using XamarinAvancado.API;
 using XamarinAvancado.Models;
@@ -28,6 +29,9 @@ namespace XamarinAvancado.ViewModels
         {
 
             Weather = api.GetData(parameters["city"].ToString());
+            Debug.WriteLine(Weather.id);
+            Debug.WriteLine(Weather.name);
+            Debug.WriteLine(Weather.cod);
         }
     }
 }
