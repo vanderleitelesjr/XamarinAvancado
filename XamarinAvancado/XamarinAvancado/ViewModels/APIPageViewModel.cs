@@ -29,9 +29,6 @@ namespace XamarinAvancado.ViewModels
         {
 
             Weather = api.GetData(parameters["city"].ToString());
-            Debug.WriteLine(Weather.id);
-            Debug.WriteLine(Weather.name);
-            Debug.WriteLine(Weather.cod);
         }
     }
 }

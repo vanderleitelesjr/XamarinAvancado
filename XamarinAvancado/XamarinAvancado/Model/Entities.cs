@@ -71,8 +71,8 @@ namespace XamarinAvancado.Models
 
     public class RootObject : BindableBase
     {
-        //public Coord coord { get; set; }
-        //public List<Weather> weather { get; set; }
+        public Coord coord { get; set; }
+        public List<Weather> weather { get; set; }
         public string @base { get; set; }
         private Main _main;
         public Main main
@@ -82,8 +82,8 @@ namespace XamarinAvancado.Models
         }
 
         public int visibility { get; set; }
-        /*public Wind wind { get; set; }
-        public Clouds clouds { get; set; }*/
+        public Wind wind { get; set; }
+        public Clouds clouds { get; set; }
 
         private int _dt;
         public int dt
@@ -92,12 +92,12 @@ namespace XamarinAvancado.Models
             set { SetProperty(ref _dt, value); }
         }
 
-        /*private Sys _sys;
+        private Sys _sys;
         public Sys sys
         {
             get { return _sys; }
             set { SetProperty(ref _sys, value); }
-        }*/
+        }
         private int _id;
         public int id
         {
