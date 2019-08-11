@@ -8,9 +8,6 @@
         <Label Text="Pesquisar uma cidade"/>
         <Entry Text="{Binding CityName}"/>
         <Button Text="Pesquisar" Command="{Binding GoToAPI}"/>
-        <Button Text="Second Page" Command="{Binding GoToSecond}"/>
-        <Button Text="Show Message" Command="{Binding CallMsg}"/>
-        <Button Text="Show Action Sheet" Command="{Binding DisplayActionSheet}"/>
     </StackLayout>
 
 </ContentPage>

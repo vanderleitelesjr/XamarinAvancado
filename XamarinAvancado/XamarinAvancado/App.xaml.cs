@@ -30,7 +30,6 @@ namespace XamarinAvancado
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<SecondPage, SecondPageViewModel>();
             containerRegistry.RegisterForNavigation<APIPage, APIPageViewModel>();
         }
     }
