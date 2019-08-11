@@ -32,14 +32,22 @@ namespace XamarinAvancado.ViewModels
             GoToAPI = new DelegateCommand(NavigateToAPI);
         }
 
-        public async void ShowMsg()
+        public void ShowMsg()
         {
-            bool result = await _dialogService.DisplayAlertAsync("Hello", "I'm a msg", "Ok","Cancel");
+            _dialogService.DisplayAlertAsync("Atenção!", "Insira o nome de uma cidade", "Ok");
         }
 
         public void NavigateToAPI()
         {
-            NavigationService.NavigateAsync($"APIPage?city={CityName}");
+            if (CityName != null)
+            {
+                NavigationService.NavigateAsync($"APIPage?city={CityName}");
+            }
+            else
+            {
+                ShowMsg();
+            }
+            
         }
     }
 }
