@@ -5,9 +5,9 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Pesquisar uma cidade"/>
         <Entry Text="{Binding CityName}"/>
-        <Button Text="Go to API" Command="{Binding GoToAPI}"/>
-        <Switch IsToggled="{Binding IsActive}"/>
+        <Button Text="Pesquisar" Command="{Binding GoToAPI}"/>
         <Button Text="Second Page" Command="{Binding GoToSecond}"/>
         <Button Text="Show Message" Command="{Binding CallMsg}"/>
         <Button Text="Show Action Sheet" Command="{Binding DisplayActionSheet}"/>

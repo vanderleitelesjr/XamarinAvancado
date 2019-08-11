@@ -37,7 +37,7 @@ namespace XamarinAvancado.ViewModels
         {
             _dialogService = dialogService;
             Title = "Main Page";
-            GoToSecond = new DelegateCommand(GoToSecondNavigation).ObservesCanExecute(() => IsActive);
+            GoToSecond = new DelegateCommand(GoToSecondNavigation);
             CallMsg = new DelegateCommand(ShowMsg);
             DisplayActionSheet = new DelegateCommand(ShowActionSheet);
             GoToAPI = new DelegateCommand(NavigateToAPI);

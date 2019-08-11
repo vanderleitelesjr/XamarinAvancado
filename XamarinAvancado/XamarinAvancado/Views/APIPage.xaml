@@ -5,12 +5,23 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="XamarinAvancado.Views.APIPage">
     <StackLayout>
-        <Label Text="{Binding Weather.id}"
-               VerticalOptions="CenterAndExpand"/>
-        <Label Text="{Binding Weather.cod}"
-               VerticalOptions="CenterAndExpand"/>
         <Label Text="{Binding Weather.name}"
-               VerticalOptions="CenterAndExpand"/>
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HeightRequest="75"/>
+        <Label Text="Clima"
+               FontSize="Micro"/>
+        <Label Text="{Binding Weather.weather[0].description}"
+               FontSize="Medium"
+               HeightRequest="50"/>
+        <Label Text="Temperatura"
+               FontSize="Micro"/>
+        <Label Text="{Binding Weather.main.temp}"
+               FontSize="Medium"/>
+        <Button Text="Favoritar Cidade"
+                VerticalOptions="EndAndExpand"
+                Command="{Binding SaveCity}"/>
     </StackLayout>
   
 </ContentPage>
