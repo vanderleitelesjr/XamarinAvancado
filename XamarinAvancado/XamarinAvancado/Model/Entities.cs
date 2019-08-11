@@ -11,10 +11,33 @@ namespace XamarinAvancado.Models
     [Newtonsoft.Json.JsonArray()]
     public class Weather : BindableBase
     {
-        public int id { get; set; }
-        public string main { get; set; }
-        public string description { get; set; }
-        public string icon { get; set; }
+        private int _id;
+        public int id
+        {
+            get { return _id; }
+            set { SetProperty(ref _id, value); }
+        }
+
+        private string _main;
+        public string main
+        {
+            get { return _main; }
+            set { SetProperty(ref _main, value); }
+        }
+
+        private string _description;
+        public string description
+        {
+            get { return _description; }
+            set { SetProperty(ref _description, value); }
+        }
+
+        private string _icon;
+        public string icon
+        {
+            get { return _icon; }
+            set { SetProperty(ref _icon, value); }
+        }
     }
 
     public class Main : BindableBase
@@ -71,9 +94,11 @@ namespace XamarinAvancado.Models
 
     public class RootObject : BindableBase
     {
-        public Coord coord { get; set; }
-        public List<Weather> weather { get; set; }
-        public string @base { get; set; }
+        /*public Coord coord { get; set; }*/
+
+        //public List<Weather> weather { get; set; }
+
+        /*public string @base { get; set; }
         private Main _main;
         public Main main
         {
@@ -97,7 +122,8 @@ namespace XamarinAvancado.Models
         {
             get { return _sys; }
             set { SetProperty(ref _sys, value); }
-        }
+        }*/
+
         private int _id;
         public int id
         {
